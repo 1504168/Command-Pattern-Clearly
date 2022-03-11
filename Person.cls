@@ -42,7 +42,6 @@ Public Function Create(GivenName As String, GivenAge As Integer) As Person
     With New Person
         .Name = GivenName
         .Age = GivenAge
-        ''Here is the change
         Set Create = .GetMe
     End With
 End Function

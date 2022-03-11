@@ -44,7 +44,6 @@ Public Function Create(GivenCompanyName As String) As EmployeeForm
     
 End Function
 
-
 Private Sub SetEmployeeNameUsingMe()
     Me.EmployeeComboBox.List = Array("Ismail", "Kamal", "Petr")
 End Sub
