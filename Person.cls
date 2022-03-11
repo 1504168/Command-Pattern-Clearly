@@ -39,11 +39,11 @@ Public Property Get GetMe() As Person
 End Property
 
 Public Function Create(GivenName As String, GivenAge As Integer) As Person
-    'Only change in this part
     With New Person
         .Name = GivenName
         .Age = GivenAge
-        Set Create = GetMe
+        ''Here is the change
+        Set Create = .GetMe
     End With
 End Function
 
