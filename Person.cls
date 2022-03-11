@@ -36,7 +36,6 @@ End Property
 
 Public Property Get GetMe() As Person
     Set GetMe = Me
-    Me.Name = "Test Name"
 End Property
 
 Public Function Create(GivenName As String, GivenAge As Integer) As Person
@@ -44,7 +43,7 @@ Public Function Create(GivenName As String, GivenAge As Integer) As Person
     With New Person
         .Name = GivenName
         .Age = GivenAge
-        Set Create = Me
+        Set Create = GetMe
     End With
 End Function
 
