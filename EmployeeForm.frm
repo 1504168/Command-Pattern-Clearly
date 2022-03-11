@@ -32,17 +32,15 @@ End Property
 
 Public Function Create(GivenCompanyName As String) As EmployeeForm
     
-    Dim CurrentEmployeeForm As EmployeeForm
-    Set CurrentEmployeeForm = New EmployeeForm
-    
-    With CurrentEmployeeForm
+    'Changes Here
+    With Me
         .CompanyName = GivenCompanyName
         'Using Ref
         .CompanyNameLabel.Caption = GivenCompanyName
-        'Using Ref >> Only Change in this line
-        SetEmployeeNameUsingRef CurrentEmployeeForm
+        'Using Me
+        SetEmployeeNameUsingMe
     End With
-    Set Create = CurrentEmployeeForm
+    Set Create = Me
     
 End Function
 
