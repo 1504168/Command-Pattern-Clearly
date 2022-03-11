@@ -39,8 +39,8 @@ Public Function Create(GivenCompanyName As String) As EmployeeForm
         .CompanyName = GivenCompanyName
         'Using Ref
         .CompanyNameLabel.Caption = GivenCompanyName
-        'Using me
-        SetEmployeeNameUsingMe
+        'Using Ref >> Only Change in this line
+        SetEmployeeNameUsingRef CurrentEmployeeForm
     End With
     Set Create = CurrentEmployeeForm
     
